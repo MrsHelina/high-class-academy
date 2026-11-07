@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>high class academy</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="site-header">
+        <img src="DCE.123.png" alt="High Class Academy Logo" class="logo" />
+
+        <div class="titles">
+          <h1>high class academy</h1>
+          <h2>Online Admission Form</h2>
+        </div>
+      </header>
+
+      <main class="form-card">
+        <form id="admissionForm" novalidate autocomplete="off">
+          <div class="form-grid">
+            <div class="field">
+              <label for="studentId">Student ID </label>
+              <input
+                type="text"
+                id="studentId"
+                name="studentId"
+                placeholder="e.g. GFA/2026/001"
+                maxlength="20"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="surname">Surname</label>
+              <input
+                type="text"
+                id="surname"
+                name="surname"
+                placeholder="Enter surname"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="firstName">First Name </label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Enter first name"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="otherNames">Other Names</label>
+              <input
+                type="text"
+                id="otherNames"
+                name="otherNames"
+                placeholder="Enter other names"
+              />
+            </div>
+
+            <div class="field">
+              <label>Gender</label>
+              <div class="option-group">
+                <label
+                  ><input type="radio" name="gender" value="Male" /> Male</label
+                >
+                <label
+                  ><input type="radio" name="gender" value="Female" />
+                  Female</label
+                >
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="className">Class </label>
+              <select id="className" name="className" required>
+                <option value=""></option>
+                <option>Creche</option>
+                <option>Nursery 1</option>
+                <option>Nursery 2</option>
+                <option>KG 1</option>
+                <option>KG 2</option>
+                <option>Primary 1</option>
+                <option>Primary 2</option>
+                <option>Primary 3</option>
+                <option>Primary 4</option>
+                <option>Primary 5</option>
+                <option>Primary 6</option>
+                <option>JHS 1</option>
+                <option>JHS 2</option>
+                <option>JHS 3</option>
+                <option>SHS 1</option>
+                <option>SHS 2</option>
+                <option>SHS 3</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="telephone">Telephone</label>
+              <input
+                type="tel"
+                id="telephone"
+                name="telephone"
+                placeholder="e.g. 024 123 4567"
+                maxlength="18"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="e.g. parent@example.com"
+              />
+            </div>
+
+            <div class="field full">
+              <label for="address">Residential Address</label>
+              <textarea
+                id="address"
+                name="address"
+                placeholder="House number, street, town / city"
+                required
+              ></textarea>
+            </div>
+
+            <div class="field">
+              <label>Joining School Bus?</label>
+              <div class="option-group">
+                <label
+                  ><input type="radio" name="schoolBus" value="Yes" />
+                  Yes</label
+                >
+                <label
+                  ><input type="radio" name="schoolBus" value="No" /> No</label
+                >
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Eating from Canteen?</label>
+              <div class="option-group">
+                <label
+                  ><input type="radio" name="canteen" value="Yes" /> Yes</label
+                >
+                <label
+                  ><input type="radio" name="canteen" value="No" /> No</label
+                >
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Day or Boarding </label>
+              <div class="option-group">
+                <label
+                  ><input type="radio" name="residence" value="Day" />
+                  Day</label
+                >
+                <label
+                  ><input type="radio" name="residence" value="Boarding" />
+                  Boarding</label
+                >
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="extraClasses">Extra Classes</label>
+              <select id="extraClasses" name="extraClasses">
+                <option value="None">None</option>
+                <option>Mathematics</option>
+                <option>English Language</option>
+                <option>Integrated Science</option>
+                <option>ICT / Computer Studies</option>
+                <option>Mathematics &amp; English</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label>Other Co-Curricular Activities</label>
+              <div class="option-group">
+                <label
+                  ><input type="checkbox" name="activities" value="Sports" />
+                  Sports</label
+                >
+                <label
+                  ><input type="checkbox" name="activities" value="Music" />
+                  Music</label
+                >
+                <label
+                  ><input type="checkbox" name="activities" value="Drama" />
+                  Drama</label
+                >
+                <label
+                  ><input type="checkbox" name="activities" value="Debate" />
+                  Debate</label
+                >
+                <label
+                  ><input type="checkbox" name="activities" value="Scouts" />
+                  Scouts / Girl Guides</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="activities"
+                    value="Cultural Dance"
+                  />
+                  Cultural Dance</label
+                >
+                <label
+                  ><input type="checkbox" name="activities" value="None" />
+                  None</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="button" id="btnSubmit" class="btn btn-submit">
+              Submit
+            </button>
+            <button type="button" id="btnUpdate" class="btn btn-update">
+              Update
+            </button>
+            <button type="button" id="btnSearch" class="btn btn-search">
+              Search
+            </button>
+            <button type="button" id="btnReset" class="btn btn-reset">
+              Reset
+            </button>
+          </div>
+
+          <div
+            id="status"
+            class="status"
+            role="status"
+            aria-live="polite"
+          ></div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
